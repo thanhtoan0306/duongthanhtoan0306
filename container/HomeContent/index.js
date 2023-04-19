@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.module.scss'
+// import './styles.module.scss'
 // import './style1.module.css'
 // import '@/styles/style2.module.css'
 
