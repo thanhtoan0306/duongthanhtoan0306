@@ -1,30 +1,29 @@
-import React from 'react'
-// import './styles.module.scss'
-// import './style1.module.css'
-// import '@/styles/style2.module.css'
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-
-const Button = styled.button`
-  background-color: ${props => props.primary ? 'blue' : 'white'};
-  color: ${props => props.primary ? 'white' : 'blue'};
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border: 2px solid blue;
-  border-radius: 4px;
+const HomePageWrapper = styled.div`
+width: 100%;
+height: 100vh;
+  padding: 10px;
+  position: relative;
+  img {
+    width: 50vw;
+    position: absolute; /* đặt hình ảnh thành absolute để nó có thể đặt vị trí tương đối với phần tử cha */
+    bottom: 0; /* căn chỉnh hình ảnh đến phía dưới của phần tử cha */
+    right: 0; /* căn chỉnh hình ảnh đến phía bên phải của phần tử cha */
+  }
 `;
 
 const HomeContent = () => {
-    const myIntro = `Hi there, my name is Duong Thanh Toan. I'm 25 years old and I'm a web developer`;
-    return (
-        <Button>
-            <div>This is my home page</div>
-            <div>{myIntro}</div>
-            <div>image</div>
-            <div>3 years in programming</div>
-            <div>many project</div>
-        </Button>
-    )
-}
+  const myIntro = `Hi there, my name is Duong Thanh Toan. I'm 25 years old and I'm a web developer`;
+  return (
+    <HomePageWrapper>
+      <div>{myIntro}</div>
+      <div>3 years in programming</div>
+      <div>I have not finish my page yet</div>
+      <img src="/images/me1.jpg" />
+    </HomePageWrapper>
+  );
+};
 
-export default HomeContent
+export default HomeContent;
