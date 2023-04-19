@@ -21,7 +21,7 @@ const HomeContent = () => {
       <div>{myIntro}</div>
       <div>3 years in programming</div>
       <div>I have not finish my page yet</div>
-      <img src="/images/me1.jpg" />
+      <img src="/images/pt11.png" />
     </HomePageWrapper>
   );
 };
