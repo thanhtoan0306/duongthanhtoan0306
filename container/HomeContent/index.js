@@ -9,6 +9,7 @@ const HomePageWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* font-size: 99px; */
   .content-container {
     flex-basis: 55%;
     width: 55%;
@@ -17,6 +18,20 @@ const HomePageWrapper = styled.div`
     align-items: center;
     .content {
       width: fit-content;
+      line-height: 2;
+      padding: 10px;
+      .myname {
+        width: fit-content;
+        font-size: 40px;
+        font-weight: 700;
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        transform: skew(-20deg);
+      }
+      .job {
+        font-size: 30px;
+      }
     }
     @media (max-width: 800px) {
       flex-basis: 100%; // 100% width when viewport is smaller than $breakpoint
@@ -24,20 +39,21 @@ const HomePageWrapper = styled.div`
   }
   .image-box {
     width: 45%;
+    min-width: 500px;
     flex-basis: 45%;
     display: flex;
     justify-content: flex-end;
     align-items: end;
+    img {
+      /* height: 50%; */
+      width: 100%;
+      /* max-height: 100%; */
+      /* max-width: 400px; */
+    }
     @media (max-width: 800px) {
       flex-basis: 100%; // 100% width when viewport is smaller than $breakpoint
     }
     /* position: relative; */
-  }
-  img {
-    /* height: 50%; */
-    width: 100%;
-    /* max-height: 100%; */
-    /* max-width: 400px; */
   }
 `;
 
@@ -46,11 +62,13 @@ const HomeContent = () => {
   return (
     <HomePageWrapper>
       <div className="content-container">
-        <div className="contain">
-          <h1>I'm a web developer</h1>
-          <div>{myIntro}</div>
-          <div>3 years in programming</div>
-          <div>I have not finish my page yet</div>
+        <div className="content">
+          <div className="myname">HI, I'M A WEB DEVELOPER</div>
+          <div className="job">My name is Duong Thanh Toan</div>
+          <div>"I have 3 years of experience in coding, with a focus on frontend web development as my major."</div>
+          <div className="cv-button">
+            <button>📄 MY CV</button>
+          </div>
         </div>
       </div>
       <div className="image-box">
