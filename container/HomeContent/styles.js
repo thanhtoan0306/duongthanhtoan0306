@@ -15,7 +15,6 @@ export const HomePageWrapper = styled.div`
     align-items: center;
     .content {
       width: fit-content;
-      line-height: 2;
       padding: 10px;
       .myname {
         width: fit-content;
@@ -26,12 +25,22 @@ export const HomePageWrapper = styled.div`
         color: white;
         padding: 10px 20px;
         transform: skew(-20deg);
+        @media (max-width: 800px) {
+          font-size: 30px;
+        }
+        @media (max-width: 420px) {
+          font-size: 20px;
+        }
       }
       .job {
+        margin-top: 20px;
         font-size: 30px;
       }
-      .cv-button > div {
+      .major {
         margin-top: 10px;
+      }
+      .cv-button > div {
+        margin-top: 20px;
         padding: 5px 10px;
         border: 1px gainsboro solid;
         border-radius: 5px;

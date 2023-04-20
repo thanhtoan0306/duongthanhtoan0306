@@ -9,7 +9,7 @@ const HomeContent = () => {
         <div className="content">
           <div className="myname">HI, I'M A WEB DEVELOPER</div>
           <div className="job">My name is Duong Thanh Toan</div>
-          <div>"I have 3 years of experience in coding, with a focus on frontend web development as my major."</div>
+          <div className="major">"I have 3 years of experience in coding, with a focus on frontend web development as my major."</div>
           <div className="cv-button">
             <div>
               <span className="prefix">
