@@ -17,8 +17,8 @@ export const DownloadIcon = (props) => (
               fill="none"
               stroke="#000000"
               stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
 
             <g>
@@ -29,11 +29,11 @@ export const DownloadIcon = (props) => (
                 points="7.9 12.3 12 16.3 16.1 12.3"
                 stroke="#000000"
                 stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinejoin="round"
+                strokeWidth="2"
               />
 
-              <line fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12" x2="12" y1="2.7" y2="14.2" />
+              <line fill="none" stroke="#000000" stroke-linecap="round" strokeLinejoin="round" strokeWidth="2" x1="12" x2="12" y1="2.7" y2="14.2" />
             </g>
           </g>
         </g>
