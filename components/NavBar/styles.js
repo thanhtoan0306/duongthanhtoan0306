@@ -16,6 +16,19 @@ export const NavBarWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    .icon-content-box {
+      padding: 5px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      /* border: 1px solid gainsboro; */
+      /* border-radius: 30px; */
+      .content {
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
   }
   .page-container {
     margin-right: 30px;
