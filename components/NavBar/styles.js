@@ -37,5 +37,16 @@ export const NavBarWrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 20px;
+    .page-route {
+      padding: 0 20px;
+      font-size: 20px;
+      font-weight: 600;
+      a:active, a:hover {
+        border-bottom: 2px solid #333;
+      }
+      .active {
+        border-bottom: 2px solid #333;
+      }
+    }
   }
 `;

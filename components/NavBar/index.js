@@ -12,10 +12,18 @@ const NavBar = () => {
         </div>
       </div>
       <div className="page-container">
-        <span>Home</span>
-        <span>Projects</span>
-        <span>Stories</span>
-        <span>About</span>
+        <span className="page-route">
+          <a className="active" href="/">Home</a>
+        </span>
+        <span className="page-route">
+          <a href="#1">Projects</a>
+        </span>
+        <span className="page-route">
+          <a href="#2">Stories</a>
+        </span>
+        <span className="page-route">
+          <a href="#3">About</a>
+        </span>
       </div>
     </NavBarWrapper>
   );
