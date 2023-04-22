@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HomePageWrapper = styled.div`
   width: 100%;
   height: 100vh;
-  padding: 10px;
+  padding: 70px 10px 10px 10px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
