@@ -13,7 +13,7 @@ const NavBar = () => {
       </div>
       <div className="page-container">
         <span className="page-route">
-          <a className="active" href="/">Home</a>
+          <a className="active" href="#">Home</a>
         </span>
         <span className="page-route">
           <a href="#1">Projects</a>
