@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const StoriesPageWrapper = styled.div`
   width: 100%;
-  height: 100vh;
   padding: 70px 10px 10px 10px;
   display: flex;
   justify-content: center;
@@ -13,6 +12,8 @@ export const StoriesPageWrapper = styled.div`
     justify-content: center;
     flex-direction: column;
     width: 70%;
+    height: fit-content;
+    overflow: hidden;
     .stories-container {
       width: 100%;
       height: 300px;
