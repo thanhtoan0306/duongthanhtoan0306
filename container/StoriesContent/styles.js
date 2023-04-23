@@ -6,51 +6,52 @@ export const StoriesPageWrapper = styled.div`
   padding: 70px 10px 10px 10px;
   display: flex;
   justify-content: center;
+
   /* background-color: red; */
-  .stories-container {
-    width: 70%;
-    height: 200px;
-
+  .main-layout {
     display: flex;
-    .year-box {
-      flex-basis: 30%;
-      display: flex;
-      gap: 20px;
-      /* justify-content: center; */
-      /* position: relative;   */
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    .stories-container {
+      width: 100%;
+      height: 300px;
 
-      .line {
-        /* position: absolute; */
-        border: none;
-        border-left: 1px dashed black;
-        /* top: 50px; */
-        height: 100%;
-        width: 1px;
-      }
-    }
-    .stories-box {
-      flex-basis: 70%;
       display: flex;
-      margin: 20px;
-      /* padding: 20px; */
-      border: 1px solid gainsboro;
-      border-radius: 20px;
-      overflow: hidden;
-      .image {
-        position: relative;
-        img {
+      .year-box {
+        /* flex-basis: 30%; */
+        display: flex;
+        gap: 20px;
+        white-space: nowrap;
+
+        .line {
+          /* position: absolute; */
+          border: none;
+          border-left: 1px dashed black;
+          /* top: 50px; */
           height: 100%;
-          /* border-radius: 20px; */
-          /* position: absolute;
-          top: 0;
-          left: 0; */
-          /* width: ;
-          height: 100%; */
-          object-fit: cover;
+          width: 1px;
         }
       }
-      .content {
-        padding: 10px;
+      .stories-box {
+        /* flex-basis: 70%; */
+        display: flex;
+        margin: 20px;
+        /* padding: 20px; */
+        border: 1px solid gainsboro;
+        border-radius: 20px;
+        overflow: hidden;
+        .image {
+          position: relative;
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .content {
+          text-overflow: ellipsis;
+          padding: 10px;
+        }
       }
     }
   }
