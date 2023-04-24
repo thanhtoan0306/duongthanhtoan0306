@@ -6,10 +6,12 @@ const StoriesContent = () => {
     {
       time: "2023",
       title: "Bubbles Spa Websites",
-      description: `A website of spa`,
+      description: `A website of spa, A spa website release should include key features such as online appointment booking, an online store, a blog section, social media integration, and a gallery section. These features provide customers with a convenient and engaging experience, helping to build excitement and anticipation for their spa visit.`,
       logoSkills: [
-        { name: "javascript", imageURL: "/images/jsLogo.png" },
+        { name: "typescript", imageURL: "/images/tsLogo.png" },
         { name: "redux", imageURL: "/images/reduxLogo.png" },
+        { name: "antd", imageURL: "/images/antdLogo.png" },
+        { name: "scss", imageURL: "/images/scssLogo.png" },
       ],
     },
     {
@@ -20,6 +22,12 @@ const StoriesContent = () => {
             five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
             release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
             including versions of Lorem Ipsum.`,
+      logoSkills: [
+        { name: "typescript", imageURL: "/images/tsLogo.png" },
+        { name: "redux", imageURL: "/images/reduxLogo.png" },
+        { name: "antd", imageURL: "/images/antdLogo.png" },
+        { name: "scss", imageURL: "/images/scssLogo.png" },
+      ],
     },
     {
       time: "2023",
@@ -29,6 +37,12 @@ const StoriesContent = () => {
             five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
             release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
             including versions of Lorem Ipsum.`,
+      logoSkills: [
+        { name: "typescript", imageURL: "/images/tsLogo.png" },
+        { name: "redux", imageURL: "/images/reduxLogo.png" },
+        { name: "antd", imageURL: "/images/antdLogo.png" },
+        { name: "scss", imageURL: "/images/scssLogo.png" },
+      ],
     },
   ];
   return (
@@ -47,11 +61,10 @@ const StoriesContent = () => {
                     {story.logoSkills?.map((skill) => {
                       return (
                         <div className="js_skill">
-                          <img className="logo" src={`${skill.imageURL || '/images/cat2.png'}`} />
+                          <img className="logo" src={`${skill.imageURL || "/images/cat2.png"}`} />
                         </div>
                       );
                     })}
-                    
                   </div>
                 </div>
               </div>
@@ -59,9 +72,7 @@ const StoriesContent = () => {
                 <div className="image">
                   <img src="/images/cat2.png" />
                 </div>
-                <div className="content">
-                  {story.description}
-                </div>
+                <div className="content">{story.description}</div>
               </div>
             </div>
           );
