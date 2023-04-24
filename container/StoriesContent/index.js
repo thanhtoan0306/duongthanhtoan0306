@@ -34,16 +34,16 @@ const StoriesContent = () => {
   return (
     <StoriesPageWrapper>
       <div className="main-layout ">
-        {storiesList.map((story) => {
+        {storiesList.map((story, index) => {
           return (
-            <div className="stories-container">
+            <div key={index} className="stories-container">
               <div className="year-box">
                 <div className="line"></div>
                 2023 Bubbles Spa Websites
               </div>
               <div className="stories-box">
                 <div className="image">
-                  <img src="/images/pt11.png" />
+                  <img src="/images/cat2.png" />
                 </div>
                 <div className="content">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
