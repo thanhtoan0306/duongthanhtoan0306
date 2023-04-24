@@ -47,8 +47,22 @@ export const StoriesPageWrapper = styled.div`
             margin-top: 10px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             grid-auto-rows: 30%;
+            .js_skill {
+              padding: 20px;
+              /* max-height: 110px; */
+              width: 100px;
+              height: 100px;
+              overflow: hidden;
+
+              .logo {
+                border-radius: 10px;
+                width: 100%;
+
+                object-fit: contain;
+              }
+            }
           }
         }
       }

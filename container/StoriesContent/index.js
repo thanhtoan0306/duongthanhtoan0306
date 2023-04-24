@@ -6,11 +6,11 @@ const StoriesContent = () => {
     {
       time: "2023",
       title: "Bubbles Spa Websites",
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-            including versions of Lorem Ipsum.`,
+      description: `A website of spa`,
+      logoSkills: [
+        { name: "javascript", imageURL: "/images/jsLogo.png" },
+        { name: "redux", imageURL: "/images/reduxLogo.png" },
+      ],
     },
     {
       time: "2023",
@@ -44,9 +44,14 @@ const StoriesContent = () => {
                 <div className="label-project">
                   2023 Bubbles Spa Websites
                   <div className="icon-skill">
-                    <div>JS</div>
-                    <div>HTML </div>
-                    <div>CSS</div>
+                    {story.logoSkills?.map((skill) => {
+                      return (
+                        <div className="js_skill">
+                          <img className="logo" src={`${skill.imageURL || '/images/cat2.png'}`} />
+                        </div>
+                      );
+                    })}
+                    
                   </div>
                 </div>
               </div>
@@ -55,11 +60,7 @@ const StoriesContent = () => {
                   <img src="/images/cat2.png" />
                 </div>
                 <div className="content">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                  ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                  not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                  1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-                  Aldus PageMaker including versions of Lorem Ipsum.
+                  {story.description}
                 </div>
               </div>
             </div>
