@@ -26,16 +26,35 @@ export const StoriesPageWrapper = styled.div`
         white-space: nowrap;
 
         .line {
-          /* position: absolute; */
+          position: relative;
           border: none;
           border-left: 1px dashed black;
-          /* top: 50px; */
           height: 100%;
           width: 1px;
+          margin-top: 10px;
+          margin-left: 10px;
+          .line-tip {
+            position: absolute;
+            font-weight: bold;
+            top: -10px;
+            left: -5px;
+          }
+        }
+        .label-project {
+          padding-top: 40px;
+          height: 100%;
+          .icon-skill {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-auto-rows: 30%;
+          }
         }
       }
       .stories-box {
         /* flex-basis: 70%; */
+
         display: flex;
         margin: 20px;
         /* padding: 20px; */

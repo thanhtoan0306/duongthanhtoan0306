@@ -38,8 +38,17 @@ const StoriesContent = () => {
           return (
             <div key={index} className="stories-container">
               <div className="year-box">
-                <div className="line"></div>
-                2023 Bubbles Spa Websites
+                <div className="line">
+                  <div className="line-tip">x</div>
+                </div>
+                <div className="label-project">
+                  2023 Bubbles Spa Websites
+                  <div className="icon-skill">
+                    <div>JS</div>
+                    <div>HTML </div>
+                    <div>CSS</div>
+                  </div>
+                </div>
               </div>
               <div className="stories-box">
                 <div className="image">
