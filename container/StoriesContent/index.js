@@ -24,7 +24,7 @@ const StoriesContent = () => {
     {
       time: "2023",
       title: "Bubbles Spa Websites",
-      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+      description: `Lorem Ipsum is simply dummy lllllllllltext of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
             since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
             five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
             release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
@@ -33,17 +33,17 @@ const StoriesContent = () => {
   ];
   return (
     <StoriesPageWrapper>
-      <div className="main-layout ">
-        {storiesList.map((story) => {
+      <div className="main-layout bg-red-500">
+        {storiesList.map((story, index) => {
           return (
-            <div className="stories-container">
+            <div key={index} className="stories-container">
               <div className="year-box">
                 <div className="line"></div>
                 2023 Bubbles Spa Websites
               </div>
               <div className="stories-box">
                 <div className="image">
-                  <img src="/images/pt11.png" />
+                  <img src="/images/cat.jpeg" />
                 </div>
                 <div className="content">
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
