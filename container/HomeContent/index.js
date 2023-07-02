@@ -21,7 +21,9 @@ const HomeContent = () => {
         </div>
       </div>
       <div className="image-box">
-        <img src="/images/pt11.png" />
+        <div className="image-container">
+          <img src="/images/img10.jpeg" />
+        </div>
       </div>
     </HomePageWrapper>
   );

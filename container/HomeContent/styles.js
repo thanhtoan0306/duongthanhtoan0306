@@ -67,14 +67,26 @@ export const HomePageWrapper = styled.div`
   }
   .image-box {
     width: 45%;
-    min-width: 500px;
+    border-radius: 50%;
     flex-basis: 45%;
     display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    img {
-      width: 100%;
+    justify-content: center;
+    align-items: center;
+    .image-container {
+      width: 35vw;
+      height: 35vw;
+      @media (max-width: 800px) {
+        width: 80vw;
+        height: 80vw;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
     }
+
     @media (max-width: 800px) {
       flex-basis: 100%; // 100% width when viewport is smaller than $breakpoint
     }
