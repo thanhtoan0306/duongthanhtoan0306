@@ -1,9 +1,10 @@
 import React from "react";
+// import { HomePageWrapper } from "./styles";
 import { DownloadIcon } from "@/public/custom-icons/custom-icons";
-import "./HomeContent.module.css"
+
 const HomeContent = () => {
   return (
-    <>
+    <HomePageWrapper>
       <div className="content-container">
         <div className="content">
           <div className="myname">HI, I'M A WEB DEVELOPER</div>
@@ -24,7 +25,7 @@ const HomeContent = () => {
           <img src="/images/duongpay-black.jpg" />
         </div>
       </div>
-      </>
+    </HomePageWrapper>
   );
 };
 
