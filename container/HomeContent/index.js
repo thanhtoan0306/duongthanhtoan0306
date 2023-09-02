@@ -1,5 +1,5 @@
 import React from "react";
-import { HomePageWrapper } from "./styles";
+// import { HomePageWrapper } from "./styles";
 import { DownloadIcon } from "@/public/custom-icons/custom-icons";
 
 const HomeContent = () => {
@@ -22,7 +22,7 @@ const HomeContent = () => {
       </div>
       <div className="image-box">
         <div className="image-container">
-          <img src="/images/img10.jpeg" />
+          <img src="/images/duongpay-black.jpg" />
         </div>
       </div>
     </HomePageWrapper>
