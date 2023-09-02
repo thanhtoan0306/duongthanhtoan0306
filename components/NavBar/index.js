@@ -22,7 +22,7 @@ const NavBar = () => {
           <a href="#2">Stories</a>
         </span>
         <span className="page-route">
-          <a href="#3">About</a>
+          <a href="#3">About me</a>
         </span>
       </div>
     </NavBarWrapper>
